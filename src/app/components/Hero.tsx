@@ -27,7 +27,7 @@ function Hero() {
   }, []);
   return (
     <div className=" bg-[#DED0B6] h-fit py-20">
-      <p className=" font-roboto flex items-center justify-center text-[#7A6D52] text-2xl">
+      <p className=" font-roboto flex items-center justify-center text-[#7A6D52] md:text-2xl text-xl">
         Get Started
       </p>
       <motion.p
@@ -35,7 +35,7 @@ function Hero() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
         viewport={{ once: true, amount: 0.8 }}
-        className="font-judson flex items-center justify-center justify-items-center mx-auto text-center text-[#503C16] text-5xl mt-6 max-w-[53%]"
+        className="font-judson flex items-center justify-center justify-items-center mx-auto text-center text-[#503C16] md:text-5xl text-3xl mt-6 max-w-[53%]"
       >
         Delivering the most memorable weddings, in the least amount of time.
       </motion.p>
@@ -46,7 +46,7 @@ function Hero() {
         viewport={{ once: true, amount: 0.8 }}
         className="mx-auto border-b-[1.5px] border-black max-w-[40%] my-16"
       ></motion.div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-3 w-fit h-fit mx-auto ">
+      <div className="grid grid-cols-3 gap-3 w-fit h-fit mx-auto px-6 ">
         <motion.div
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -89,7 +89,7 @@ function Hero() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9 }}
           viewport={{ once: true, amount: 0.8 }}
-          className="relative w-fit h-fit -mt-[203px]"
+          className="relative w-fit h-fit -mt-[203px] "
         >
           <Image src={rectangle5} alt="Image 5" />
         </motion.div>
