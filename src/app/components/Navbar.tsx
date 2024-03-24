@@ -35,7 +35,7 @@ export function Navbar() {
   };
 
   return (
-    <div className="fixed py-2 w-full bg-[#FDF7E4] z-10">
+    <div className="fixed py-2 w-full bg-[#FDF7E4] z-20">
       <div className="mx-auto flex max-w-full items-center px-4 py-2 sm:px-6 lg:px-8">
         <div className="lg:inline-flex items-center fixed hidden space-x-2">
           <Image src={logo} alt="The Thousand Lights" />

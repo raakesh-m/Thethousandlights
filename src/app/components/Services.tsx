@@ -20,12 +20,12 @@ function Services() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
-    <div className=" bg-[#DED0B6] h-fit py-20">
+    <div className=" bg-[#DED0B6] h-fit py-20 overflow-hidden">
       <p className=" font-roboto flex items-center justify-center text-[#7A6D52] text-2xl ">
         Services
       </p>
       <motion.p
-        initial={{ opacity: 0, y: 100 }}
+        initial={{ opacity: 1, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
         viewport={{ once: true, amount: 0.8 }}
@@ -34,18 +34,18 @@ function Services() {
         Magic in every frame
       </motion.p>
       <motion.div
-        initial={{ opacity: 0, y: 100 }}
+        initial={{ opacity: 1, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
         viewport={{ once: true, amount: 0.8 }}
         className="mx-auto border-b-[1.5px] border-black max-w-[40%] my-16"
       ></motion.div>
-      <div className="flex items-center justify-center px-16 flex-row gap-8">
+      <div className="flex items-center justify-center flex-row gap-6">
         <motion.div
-          initial={{ opacity: 0, x: -200 }}
+          initial={{ opacity: 1, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
-          viewport={{ once: true, amount: 0.8 }}
+          viewport={{ once: true, amount: 0.4 }}
           className=" max-w-[30%]"
         >
           <p className=" font-judson text-xl text-black leading-10 text-right ">
@@ -62,10 +62,10 @@ function Services() {
           </span>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0, y: 100 }}
+          initial={{ opacity: 1, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          viewport={{ once: true, amount: 0.8 }}
+          viewport={{ once: true, amount: 0.4 }}
           className=" max-w-[30%]"
         >
           <Image src={wed} alt="Wedding" />
@@ -74,10 +74,10 @@ function Services() {
           </p>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0, x: 200 }}
+          initial={{ opacity: 1, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
-          viewport={{ once: true, amount: 0.8 }}
+          viewport={{ once: true, amount: 0.4 }}
           className=" max-w-[30%]"
         >
           <p className=" font-judson text-xl text-black leading-10 ">

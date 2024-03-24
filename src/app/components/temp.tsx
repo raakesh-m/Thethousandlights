@@ -46,13 +46,13 @@ function Hero() {
         viewport={{ once: true, amount: 0.8 }}
         className="mx-auto border-b-[1.5px] border-black max-w-[40%] my-16"
       ></motion.div>
-      <div className=" w-[750px] h-[915px] mx-auto px-6 relative ">
+      <div className="grid grid-cols-3 gap-3 w-fit h-fit mx-auto px-6 ">
         <motion.div
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9 }}
-          viewport={{ once: true, amount: 0.5 }}
-          className=" w-fit h-fit absolute top-0 left-0"
+          viewport={{ once: true, amount: 0.8 }}
+          className=" w-fit h-fit"
         >
           <Image src={rectangle1} alt="Image 1" />
         </motion.div>
@@ -61,8 +61,8 @@ function Hero() {
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9 }}
-          viewport={{ once: true, amount: 1 }}
-          className=" w-fit h-fit absolute top-0 left-[254px]"
+          viewport={{ once: true, amount: 0.8 }}
+          className=" w-fit h-fit"
         >
           <Image src={rectangle2} alt="Image 2" />
         </motion.div>
@@ -70,8 +70,8 @@ function Hero() {
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9 }}
-          viewport={{ once: true, amount: 0.5 }}
-          className=" w-fit h-fit absolute top-0 right-0"
+          viewport={{ once: true, amount: 0.8 }}
+          className=" w-fit h-fit"
         >
           <Image src={rectangle3} alt="Image 3" />
         </motion.div>
@@ -79,8 +79,8 @@ function Hero() {
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9 }}
-          viewport={{ once: true, amount: 0.01 }}
-          className=" w-fit h-fit absolute left-0 top-[376px] "
+          viewport={{ once: true, amount: 0.8 }}
+          className=" w-fit h-fit"
         >
           <Image src={rectangle4} alt="Image 4" />
         </motion.div>
@@ -88,8 +88,8 @@ function Hero() {
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9 }}
-          viewport={{ once: true, amount: 0.5 }}
-          className=" w-fit h-fit absolute top-[174px] left-[254px]"
+          viewport={{ once: true, amount: 0.8 }}
+          className=" w-fit h-fit -mt-[203px] "
         >
           <Image src={rectangle5} alt="Image 5" />
         </motion.div>
@@ -98,17 +98,17 @@ function Hero() {
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9 }}
-          viewport={{ once: true, amount: 0.01 }}
-          className=" w-fit h-fit absolute top-[380px] right-0"
+          viewport={{ once: true, amount: 0.8 }}
+          className=" w-fit h-fit"
         >
-          <Image src={rectangle6} alt="Image 6 " />
+          <Image src={rectangle6} alt="Image 6" />
         </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9 }}
-          viewport={{ once: true, amount: 0.01 }}
-          className=" w-fit h-fit absolute bottom-0 left-0"
+          viewport={{ once: true, amount: 0.8 }}
+          className=" w-fit h-fit"
         >
           <Image src={rectangle7} alt="Image 7" />
         </motion.div>
@@ -117,8 +117,8 @@ function Hero() {
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9 }}
-          viewport={{ once: true, amount: 0.5 }}
-          className=" w-fit h-fit absolute bottom-0 left-[254px] "
+          viewport={{ once: true, amount: 0.8 }}
+          className=" w-fit h-fit -mt-[230px]"
         >
           <Image src={rectangle8} alt="Image 8" />
         </motion.div>
@@ -126,8 +126,8 @@ function Hero() {
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9 }}
-          viewport={{ once: true, amount: 0.4 }}
-          className=" w-fit h-fit absolute right-0 bottom-0 "
+          viewport={{ once: true, amount: 0.8 }}
+          className=" w-fit h-fit -mt-[200px]"
         >
           <Image src={rectangle9} alt="Image 9" />
         </motion.div>

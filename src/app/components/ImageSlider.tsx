@@ -13,11 +13,11 @@ const ImageSlider: React.FC<PropType> = ({ options }) => {
 
   // Array of imported image paths
   const slides = [
-    "/assets/slide/slide0.png",
-    "/assets/slide/slide1.png",
-    "/assets/slide/slide2.png",
-    "/assets/slide/slide3.png",
-    "/assets/slide/slide4.png",
+    "/assets/slide/slide1.svg",
+    "/assets/slide/slide2.svg",
+    "/assets/slide/slide3.svg",
+    "/assets/slide/slide4.svg",
+    "/assets/slide/slide5.svg",
   ];
 
   return (
