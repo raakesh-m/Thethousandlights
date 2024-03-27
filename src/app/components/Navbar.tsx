@@ -35,9 +35,9 @@ export function Navbar() {
   };
 
   return (
-    <div className="fixed py-2 w-full bg-[#FDF7E4] z-20">
+    <div className="fixed py-2 w-full bg-[#FDF7E4] z-30">
       <div className="mx-auto flex max-w-full items-center px-4 py-2 sm:px-6 lg:px-8">
-        <div className="lg:inline-flex items-center fixed hidden space-x-2">
+        <div className="lg:inline-flex items-center fixed ml-2 hidden space-x-2">
           <Image src={logo} alt="The Thousand Lights" />
         </div>
         <div className="hidden mx-auto lg:block">
@@ -63,18 +63,21 @@ export function Navbar() {
           <Image
             src={logo}
             alt="The Thousand Lights"
-            className="flex items-center justify-center mx-auto"
-            style={{ width: "40%", height: "40%" }}
+            className="flex items-center justify-center mx-auto w-10"
           />
         </div>
 
         {isMenuOpen && (
-          <div className="absolute inset-x-0 top-0 z-50 origin-top-right w-2/3  transform p-2 transition lg:hidden">
-            <div className="divide-y-2 divide-gray-50 rounded-lg bg-[#B79666] shadow-lg h-screen ring-1 ring-black ring-opacity-5">
+          <div className="absolute inset-x-0 top-0 z-50 origin-top-right w-2/3  transform  transition lg:hidden">
+            <div className="divide-y-2 divide-gray-50  bg-[#B79666] shadow-lg h-screen ring-1 ring-black ring-opacity-5">
               <div className="px-5 pb-6 pt-5">
                 <div className="flex items-center justify-between">
                   <div className="inline-flex items-center space-x-2">
-                    <span className="font-bold">TTL</span>
+                    <Image
+                      src={logo}
+                      alt="The Thousand Lights"
+                      className="w-10"
+                    />
                   </div>
                   <div className="-mr-2">
                     <button
