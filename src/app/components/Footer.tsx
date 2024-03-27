@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logo from "../../../public/assets/footer/footerlogo.png";
+import logo from "../../../public/assets/footer/footerlogo.svg";
 import whatsapp from "../../../public/assets/footer/whatsapp.svg";
 import insta from "../../../public/assets/footer/insta.svg";
 import mail from "../../../public/assets/footer/mail.svg";
