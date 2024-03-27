@@ -55,7 +55,7 @@ function Hero() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
         viewport={{ once: true, amount: 0.8 }}
-        className="mx-auto border-b-[1.5px] border-black max-w-[40%] md:my-16 my-6"
+        className="mx-auto border-b-[1.5px] border-[#503C16] md:max-w-[40%] max-w-[70%] md:my-16 my-6"
       ></motion.div>
       <div className=" w-[750px] h-[915px] mx-auto px-6 relative hidden lg:block ">
         <motion.div
@@ -177,7 +177,7 @@ function Hero() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9 }}
           viewport={{ once: true, amount: 0.01 }}
-          className=" w-fit h-fit absolute left-0 top-[178px] "
+          className=" w-fit h-fit absolute left-0 top-[179px] "
         >
           <Image src={collagemob4} alt="Image 4" />
         </motion.div>
