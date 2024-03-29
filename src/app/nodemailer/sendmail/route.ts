@@ -2,14 +2,13 @@
 
 import nodemailer from "nodemailer";
 import { NextResponse } from "next/server";
-import type { NextApiRequest } from "next";
 
 type Data = {
   success?: boolean;
   message?: string;
 };
 
-export const POST = async (request: NextApiRequest) => {
+export const POST = async (request: any) => {
   if (request.method !== "POST") {
     return NextResponse.json(
       { error: "Invalid request method." },

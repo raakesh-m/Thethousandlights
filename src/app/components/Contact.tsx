@@ -38,7 +38,7 @@ function Contact() {
   ) => {
     try {
       // console.log("values are", values);
-      const response = await fetch("/nodeemailer/sendmail", {
+      const response = await fetch("/nodemailer/sendmail", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
