@@ -1,11 +1,14 @@
 import Image from "next/image";
-import contactimg from "../../../public/assets/contact/contactimg.png";
+import contactimg from "../../../public/assets/contact/contactimg.svg";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
+import { useState } from "react";
 
 const validationSchema = Yup.object().shape({
   name: Yup.string().required("Name is required"),
-  mobileNumber: Yup.string().required("Mobile Number is required"),
+  mobileNumber: Yup.string()
+    .matches(/^[0-9]{10}$/, "Invalid mobile number")
+    .required("Mobile Number is required"),
   email: Yup.string()
     .email("Invalid email address")
     .required("Email is required"),
@@ -24,6 +27,40 @@ const initialValues = {
 const options = ["option1", "option2", "option3"];
 
 function Contact() {
+  const [submissionError, setSubmissionError] = useState<string | null>(null);
+
+  const handleSubmit = async (
+    values: typeof initialValues,
+    {
+      setSubmitting,
+      resetForm,
+    }: { setSubmitting: (isSubmitting: boolean) => void; resetForm: () => void }
+  ) => {
+    try {
+      // console.log("values are", values);
+      const response = await fetch("/nodeemailer/sendmail", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(values),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to submit form");
+      }
+
+      console.log("Form submitted successfully");
+      resetForm();
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      setSubmissionError(
+        "Form submission unsuccessful. Kindly reach out to us via email."
+      );
+    } finally {
+      setSubmitting(false);
+    }
+  };
   return (
     <div className="bg-[#FDF7E4] py-10 px-4 sm:px-8 md:px-12 lg:px-20 xl:px-24 2xl:px-32 flex flex-col sm:flex-row">
       <div className="w-full md:w-1/2 md:pr-4">
@@ -33,11 +70,7 @@ function Contact() {
         <Formik
           initialValues={initialValues}
           validationSchema={validationSchema}
-          onSubmit={(values, { setSubmitting }) => {
-            // Handle form submission here
-            console.log(values);
-            setSubmitting(false);
-          }}
+          onSubmit={handleSubmit}
         >
           {({ isSubmitting }) => (
             <Form className="gap-6 sm:gap-8 flex flex-col">
@@ -142,6 +175,9 @@ function Contact() {
                   </span>
                 </button>
               </div>
+              {submissionError && (
+                <div className="text-red-500 text-sm">{submissionError}</div>
+              )}
             </Form>
           )}
         </Formik>

@@ -8,25 +8,25 @@ type PropType = {
   options?: EmblaOptionsType;
 };
 
-const ImageSlider: React.FC<PropType> = ({ options }) => {
+const ImageSlider2: React.FC<PropType> = ({ options }) => {
   const [emblaRef] = useEmblaCarousel(options, [Autoplay()]);
   // image paths
-  const slides = [
-    "/assets/slide/slide1.svg",
-    "/assets/slide/slide2.svg",
-    "/assets/slide/slide3.svg",
-    "/assets/slide/slide4.svg",
-    "/assets/slide/slide5.svg",
-  ];
 
+  const slidesm = [
+    "/assets/slide/slidem1.svg",
+    "/assets/slide/slidem2.svg",
+    "/assets/slide/slidem3.svg",
+    "/assets/slide/slidem4.svg",
+    "/assets/slide/slidem5.svg",
+  ];
   return (
     <>
-      <section className="embla overflow-hidden pt-14 hidden lg:block ">
+      <section className="embla overflow-hidden pt-14 block lg:hidden ">
         <div className="embla__viewport" ref={emblaRef}>
           <div className="embla__container flex">
-            {slides.map((slide, index) => (
+            {slidesm.map((slidesm, index) => (
               <div className="embla__slide flex-shrink-0 w-full" key={index}>
-                <img src={slide} alt={`Slide ${index}`} className="w-full" />
+                <img src={slidesm} alt={`Slidem ${index}`} className="w-full" />
               </div>
             ))}
           </div>
@@ -36,4 +36,4 @@ const ImageSlider: React.FC<PropType> = ({ options }) => {
   );
 };
 
-export default ImageSlider;
+export default ImageSlider2;
