@@ -9,7 +9,7 @@ type Data = {
   message?: string;
 };
 
-export const POST = async (request: Request | NextApiRequest) => {
+export const POST = async (request: NextApiRequest) => {
   if (request.method !== "POST") {
     return NextResponse.json(
       { error: "Invalid request method." },
