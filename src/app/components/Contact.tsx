@@ -67,7 +67,10 @@ function Contact() {
     }
   };
   return (
-    <div className="bg-[#FDF7E4] py-10 px-4 sm:px-8 md:px-12 lg:px-20 xl:px-24 2xl:px-32 flex flex-col sm:flex-row">
+    <div
+      id="inquiry"
+      className="bg-[#FDF7E4] py-10 px-4 sm:px-8 md:px-12 lg:px-20 xl:px-24 2xl:px-32 flex flex-col sm:flex-row"
+    >
       <div className="w-full md:w-1/2 md:pr-4">
         <p className="font-judson text-4xl sm:text-6xl text-[#595345] mb-8 sm:mb-14">
           Inquiry

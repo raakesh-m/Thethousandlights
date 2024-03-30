@@ -39,7 +39,7 @@ function Hero() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
-    <div className=" bg-[#DED0B6] h-fit py-12 md:py-20 ">
+    <div id="home" className=" bg-[#DED0B6] h-fit py-12 md:py-20 ">
       <p className=" font-roboto flex items-center justify-center text-[#7A6D52] xl:text-2xl md:text-xl text-lg">
         Get Started
       </p>

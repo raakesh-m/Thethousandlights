@@ -25,7 +25,7 @@ function Services() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
-    <div className=" bg-[#DED0B6] h-fit py-12 md:py-20 overflow-hidden">
+    <div id="services" className=" bg-[#DED0B6] h-fit py-12 md:py-20 overflow-hidden">
       <p className=" font-roboto flex items-center justify-center text-[#7A6D52] xl:text-2xl md:text-xl text-lg">
         Services
       </p>
