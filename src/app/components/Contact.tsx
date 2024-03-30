@@ -1,8 +1,11 @@
+"use client";
+
 import Image from "next/image";
 import contactimg from "../../../public/assets/contact/contactimg.svg";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { useState } from "react";
+import toast, { Toaster } from "react-hot-toast";
 
 const validationSchema = Yup.object().shape({
   name: Yup.string().required("Name is required"),
@@ -37,8 +40,7 @@ function Contact() {
     }: { setSubmitting: (isSubmitting: boolean) => void; resetForm: () => void }
   ) => {
     try {
-      // console.log("values are", values);
-      const response = await fetch("/nodemailer/sendmail", {
+      const response = await fetch("/api/send", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -46,12 +48,15 @@ function Contact() {
         body: JSON.stringify(values),
       });
 
-      if (!response.ok) {
-        throw new Error("Failed to submit form");
+      if (response.ok) {
+        console.log("Form submitted successfully");
+        toast.success("Form submitted successfully");
+        resetForm();
+      } else {
+        const error = await response.json();
+        setSubmissionError(error.error);
+        toast.error("Form submission failed.");
       }
-
-      console.log("Form submitted successfully");
-      resetForm();
     } catch (error) {
       console.error("Error submitting form:", error);
       setSubmissionError(
@@ -67,6 +72,7 @@ function Contact() {
         <p className="font-judson text-4xl sm:text-6xl text-[#595345] mb-8 sm:mb-14">
           Inquiry
         </p>
+        <Toaster position="bottom-center" />
         <Formik
           initialValues={initialValues}
           validationSchema={validationSchema}

@@ -1,4 +1,3 @@
-"use client";
 import { Navbar } from "@/app/components/Navbar";
 import ImageSlider from "./components/ImageSlider";
 import Hero from "./components/Hero";

@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import top from "../../../public/assets/aboutus/aboutustop.svg";
 import toplg from "../../../public/assets/aboutus/aboutustopLg.svg";
