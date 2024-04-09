@@ -3,9 +3,8 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(request: Request) {
   try {
-    const { name, mobileNumber, email, option, requirements } =
-      await request.json();
-    console.log("check", name, mobileNumber, email, option, requirements);
+    const { name, mobileNumber, email, requirements } = await request.json();
+    // console.log("check", name, mobileNumber, email, requirements);
 
     await resend.emails.send({
       from: "onboarding@resend.dev",
@@ -15,7 +14,6 @@ export async function POST(request: Request) {
         <p>Name: ${name}</p>
         <p>Mobile Number: ${mobileNumber}</p>
         <p>Email: ${email}</p>
-        <p>Option: ${option}</p>
         <p>Requirements: ${requirements}</p>
       `,
     });

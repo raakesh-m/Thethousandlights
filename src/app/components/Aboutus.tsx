@@ -142,20 +142,12 @@ function Aboutus() {
             </p>
           </motion.div>
         </div>
-        <div></div>
-        <div className="relative w-full h-[160px] sm:h-[200px] md:h-[280px] lg:h-[350px] xl:h-[420px]">
+        <div className="relative w-full h-[160px] sm:h-[230px] md:h-[320px] lg:h-[390px] xl:h-[510px]">
           <Image
             src={bottomimg}
             alt="I believe in the power of storytelling through images. I ready to document the love, joy, and excitement that unfolds throughout the day."
             className="absolute inset-0 w-full h-full object-cover object-center"
           />
-          <div className="absolute inset-0 flex justify-center items-center">
-            <p className="text-white text-center max-w-[60%] text-[20px] md:text-[28px] lg:text-[35px] xl:text-[40px] font-italianno">
-              I believe in the power of storytelling through images. I ready to
-              document the love, joy, and excitement that unfolds throughout the
-              day.
-            </p>
-          </div>
         </div>
       </div>
     </>

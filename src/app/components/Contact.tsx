@@ -15,7 +15,6 @@ const validationSchema = Yup.object().shape({
   email: Yup.string()
     .email("Invalid email address")
     .required("Email is required"),
-  option: Yup.string().required("Please select an option"),
   requirements: Yup.string().required("Requirements are required"),
 });
 
@@ -23,7 +22,6 @@ const initialValues = {
   name: "",
   mobileNumber: "",
   email: "",
-  option: "",
   requirements: "",
 };
 
@@ -128,32 +126,7 @@ function Contact() {
                 />
               </div>
 
-              <div className="flex flex-col">
-                <Field
-                  id="option"
-                  as="select"
-                  name="option"
-                  className="border-b border-[#BBAB8C] py-2 text-lg sm:text-2xl text-black font-judson bg-[#FDF7E4]  w-full"
-                >
-                  <option disabled hidden value="" className="">
-                    Options
-                  </option>
-                  {options.map((option) => (
-                    <option
-                      className=" bg-[#FDF7E4] text-black"
-                      key={option}
-                      value={option}
-                    >
-                      {option}
-                    </option>
-                  ))}
-                </Field>
-                <ErrorMessage
-                  name="option"
-                  component="div"
-                  className="text-red-500"
-                />
-              </div>
+              
 
               <div className="flex flex-col">
                 <Field

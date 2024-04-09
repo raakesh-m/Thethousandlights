@@ -7,9 +7,8 @@ import insta from "../../../public/assets/footer/insta.svg";
 import mail from "../../../public/assets/footer/mail.svg";
 
 function Footer() {
-  const emailLink = encodeURIComponent(
-    "mailto:getbandark@gmail.com?subject=The%20Thousand%20Lights%20website&body=Hi%2C%0A%0AI%20came%20across%20your%20exceptional%20photographs%20on%20The%20Thousand%20Lights%20website%2C%20and%20I'm%20genuinely%20impressed.%20I'd%20like%20to%20discuss%20the%20possibility%20of%20hiring%20you%20for%20an%20upcoming%20event.%20Your%20talent%20captured%20my%20attention%2C%20and%20I%20believe%20your%20unique%20vision%20would%20be%20perfect%20for%20our%20occasion.%0A%0ALooking%20forward%20to%20hearing%20from%20you%20soon.%0A%0ABest%20regards%2C"
-  );
+  const emailLink =
+    "mailto:getbandark@gmail.com?subject=The%20Thousand%20Lights%20website&body=Hi%2C%0A%0AI%20came%20across%20your%20exceptional%20photographs%20on%20The%20Thousand%20Lights%20website%2C%20and%20I'm%20genuinely%20impressed.%20I'd%20like%20to%20discuss%20the%20possibility%20of%20hiring%20you%20for%20an%20upcoming%20event.%20Your%20talent%20captured%20my%20attention%2C%20and%20I%20believe%20your%20unique%20vision%20would%20be%20perfect%20for%20our%20occasion.%0A%0ALooking%20forward%20to%20hearing%20from%20you%20soon.%0A%0ABest%20regards%2C";
 
   return (
     <>
