@@ -40,12 +40,12 @@ body {
   position: relative;
   overflow: hidden;
   z-index: 1;
-  color: #090909;
+  color: #ffffff;
   padding: 0.7em 3.3em 0.7em 1.7em;
   font-size: 13px;
   border-radius: 0.5em;
-  background: #e8e8e8;
-  border: 1px solid #e8e8e8;
+  background: #503c16;
+  border: 1px solid #503c16;
   box-shadow: 3px 3px 6px #b1b1b1;
 }
 
@@ -54,7 +54,7 @@ body {
   position: absolute;
   padding: 0px 5px;
   right: 9px;
-  top: 7px;
+  top: 6.5px;
 }
 
 .button2:active {
