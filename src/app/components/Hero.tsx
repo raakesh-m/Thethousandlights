@@ -40,15 +40,12 @@ function Hero() {
   }, []);
   return (
     <div id="home" className=" bg-[#DED0B6] h-fit py-12 md:py-20 ">
-      <p className=" font-roboto flex items-center justify-center text-[#7A6D52] xl:text-2xl md:text-xl text-lg">
-        Get Started
-      </p>
       <motion.p
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
         viewport={{ once: true, amount: 0.8 }}
-        className="font-judson flex items-center justify-center justify-items-center mx-auto text-center text-[#503C16] xl:text-5xl md:text-3xl text-xl md:mt-6 mt-3 xl:max-w-[53%] max-w-[70%] xmd:max-w-[80%] "
+        className=" font-kalufonia flex items-center justify-center justify-items-center mx-auto text-center text-[#503C16] xl:text-5xl md:text-3xl text-xl md:mt-6  xl:max-w-[53%] max-w-[70%] xmd:max-w-[80%] "
       >
         Delivering the most memorable weddings, in the least amount of time.
       </motion.p>

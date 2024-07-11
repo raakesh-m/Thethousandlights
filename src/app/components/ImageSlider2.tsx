@@ -9,7 +9,8 @@ type PropType = {
 };
 
 const ImageSlider2: React.FC<PropType> = ({ options }) => {
-  const [emblaRef] = useEmblaCarousel(options, [Autoplay()]);
+  const autoplayOptions = { delay: 2400 };
+  const [emblaRef] = useEmblaCarousel(options, [Autoplay(autoplayOptions)]);
   // image paths
 
   const slidesm = [
@@ -22,6 +23,12 @@ const ImageSlider2: React.FC<PropType> = ({ options }) => {
   return (
     <>
       <section className="embla overflow-hidden pt-14 block lg:hidden ">
+        <div className="absolute top-[200px] sm:top-[340px] md:top-[480px] p-4 md:left-30 sm:left-20 z-10">
+          <p className="text-xl md:text-xl font-judson text-shadow-default">
+            Capture timeless moments with
+          </p>
+          <p className="text-3xl md:text-2xl font-judson  text-shadow-strong">THE THOUSAND LIGHTS</p>
+        </div>
         <div className="embla__viewport" ref={emblaRef}>
           <div className="embla__container flex">
             {slidesm.map((slidesm, index) => (

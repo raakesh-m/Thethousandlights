@@ -2,13 +2,13 @@
 import React from "react";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
-import logo from "../../../public/assets/logoblack.svg";
+import logo from "../../../public/assets/wvlogo.svg";
 import { Link as ScrollLink } from "react-scroll";
 
 const menuItems = [
   {
     name: "Home",
-    href: "home", // Provide the ID of the section to scroll to
+    href: "home",
   },
   {
     name: "About us",
@@ -43,7 +43,7 @@ export function Navbar() {
             to="slider"
             smooth={true}
             duration={500}
-            className=" cursor-pointer"
+            className=" cursor-pointer w-30"
             onClick={closeMenu}
           >
             <Image src={logo} alt="The Thousand Lights" />
@@ -58,7 +58,7 @@ export function Navbar() {
                   to={item.href}
                   smooth={true}
                   duration={500}
-                  className="font-judson text-lg px-6 py-4 cursor-pointer text-black hover:border-b-4 border-[#503c16]"
+                  className="font-judson text-xl px-6 py-4 cursor-pointer text-black hover:border-b-4 border-[#503c16]"
                   onClick={closeMenu}
                 >
                   {item.name}
@@ -77,7 +77,7 @@ export function Navbar() {
             to="slider"
             smooth={true}
             duration={500}
-            className=" cursor-pointer flex items-center justify-center mx-auto w-10"
+            className=" cursor-pointer flex items-center justify-center mx-auto w-20"
             onClick={closeMenu}
           >
             <Image src={logo} alt="The Thousand Lights" />
@@ -100,7 +100,7 @@ export function Navbar() {
                       <Image
                         src={logo}
                         alt="The Thousand Lights"
-                        className="w-10"
+                        className="w-20"
                       />
                     </ScrollLink>
                   </div>
@@ -136,15 +136,25 @@ export function Navbar() {
                 <button
                   type="button"
                   className="mt-4 w-full rounded-md bg-black px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+                  onClick={() =>
+                    window.open(
+                      "https://wa.me/+918838974199?text=Hi,%20I%20saw%20your%20website%20and%20would%20like%20to%20talk%20to%20you%20about%20an%20event",
+                      "_blank"
+                    )
+                  }
                 >
-                  Button text
+                  Whatsapp
                 </button>
               </div>
             </div>
           </div>
         )}
         <div className=" absolute lg:flex hidden right-6">
-          <button className="button2">
+          <a
+            className="button2"
+            target="_blank"
+            href="https://wa.me/+918838974199?text=Hi,%20I%20saw%20your%20website%20and%20would%20like%20to%20talk%20to%20you%20about%20an%20event"
+          >
             WhatsApp
             <svg
               viewBox="0 0 48 48"
@@ -175,7 +185,7 @@ export function Navbar() {
                 fill="#fff"
               ></path>
             </svg>
-          </button>
+          </a>
         </div>
       </div>
     </div>

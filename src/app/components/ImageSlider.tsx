@@ -9,7 +9,8 @@ type PropType = {
 };
 
 const ImageSlider: React.FC<PropType> = ({ options }) => {
-  const [emblaRef] = useEmblaCarousel(options, [Autoplay()]);
+  const autoplayOptions = { delay: 2400 };
+  const [emblaRef] = useEmblaCarousel(options, [Autoplay(autoplayOptions)]);
   // image paths
   const slides = [
     "/assets/slide/slide1.svg",
@@ -21,7 +22,15 @@ const ImageSlider: React.FC<PropType> = ({ options }) => {
 
   return (
     <>
-      <section className="embla overflow-hidden pt-14 hidden lg:block ">
+      <section className="embla overflow-hidden pt-14 hidden lg:block relative">
+        <div className="absolute bottom-10 xl:bottom-20 left-10 xl:left-20 z-10 p-4">
+          <p className="text-3xl xl:text-4xl font-judson text-shadow-default">
+            Capture timeless moments with
+          </p>
+          <p className="text-4xl xl:text-5xl font-judson  text-shadow-strong">
+            Stories by WE VOW
+          </p>
+        </div>
         <div className="embla__viewport" ref={emblaRef}>
           <div className="embla__container flex">
             {slides.map((slide, index) => (

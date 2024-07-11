@@ -15,7 +15,6 @@ export default function Home() {
       <Aboutus />
       <Services />
       <Contact />
-      <Footer />
     </main>
   );
 }

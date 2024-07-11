@@ -15,11 +15,30 @@ const config: Config = {
       },
       fontFamily: {
         judson: ["Judson", "serif"],
+        quattrocento: ["Quattrocento Sans", "sans-serif"],
         roboto: ["Roboto", "sans-serif"],
-        italianno: ["Italianno", "serif"],
+        yrsa: ["Yrsa", "serif"],
+        kalufonia: ["Kalufonia", "sans-serif"],
+      },
+      textShadow: {
+        default: "2px 2px 4px rgba(0, 0, 0, 0.5)",
+        strong:
+          "2px 2px 4px rgba(0, 0, 0, 0.5), 0px 0px 8px rgba(0, 0, 0, 0.3)",
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ matchUtilities, theme }: { matchUtilities: any; theme: any }) {
+      matchUtilities(
+        {
+          "text-shadow": (value: string) => ({
+            textShadow: value,
+          }),
+        },
+        { values: theme("textShadow") }
+      );
+    },
+  ],
 };
+
 export default config;

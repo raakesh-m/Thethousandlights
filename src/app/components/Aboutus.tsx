@@ -41,7 +41,7 @@ function Aboutus() {
           >
             <div className=" relative h-fit w-full ">
               <div className="">
-                <p className=" font-roboto  text-[#7A6D52] xl:text-2xl text-lg ">
+                <p className=" font-kalufonia text-[#7A6D52] xl:text-2xl text-lg ">
                   About us:
                 </p>
                 <p className="font-judson max-w-[60%] text-[#503C16] xl:text-5xl text-3xl mt-6 ">
@@ -49,7 +49,7 @@ function Aboutus() {
                 </p>
                 <div className="border-b-[1.5px] border-black max-w-[38%] my-10" />
               </div>
-              <p className="text-black font-judson text-sm md:text-md lg:text-lg xl:text-2xl max-w-[70%]  ">
+              <p className="text-black font-quattrocento text-sm md:text-md lg:text-lg xl:text-2xl max-w-[70%]  ">
                 At Thousand Lights, we believe every life deserves to be a
                 masterpiece. We are a team of seasoned photographers united by a
                 deep appreciation for the art of capturing light and emotion.
@@ -131,7 +131,7 @@ function Aboutus() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true, amount: 0.5 }}
           >
-            <p className="text-black font-judson text-[10px] leading-5  max-w-[85%]  ">
+            <p className="text-black font-quattrocento text-[10px] leading-5  max-w-[85%]  ">
               At Thousand Lights, we believe every life deserves to be a
               masterpiece. We are a team of seasoned photographers united by a
               deep appreciation for the art of capturing light and emotion. Our
