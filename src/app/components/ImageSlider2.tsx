@@ -27,7 +27,9 @@ const ImageSlider2: React.FC<PropType> = ({ options }) => {
           <p className="text-xl md:text-xl font-judson text-shadow-default">
             Capture timeless moments with
           </p>
-          <p className="text-3xl md:text-2xl font-judson  text-shadow-strong">THE THOUSAND LIGHTS</p>
+          <p className="text-3xl md:text-2xl font-judson  text-shadow-strong">
+            Stories by WE VOW
+          </p>
         </div>
         <div className="embla__viewport" ref={emblaRef}>
           <div className="embla__container flex">
