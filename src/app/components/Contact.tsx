@@ -34,8 +34,7 @@ const initialValues = {
 const options = ["option1", "option2", "option3"];
 
 function Contact() {
-  const emailLink =
-    "mailto:getbandark@gmail.com?subject=The%20Thousand%20Lights%20website&body=Hi%2C%0A%0AI%20came%20across%20your%20exceptional%20photographs%20on%20The%20Thousand%20Lights%20website%2C%20and%20I'm%20genuinely%20impressed.%20I'd%20like%20to%20discuss%20the%20possibility%20of%20hiring%20you%20for%20an%20upcoming%20event.%20Your%20talent%20captured%20my%20attention%2C%20and%20I%20believe%20your%20unique%20vision%20would%20be%20perfect%20for%20our%20occasion.%0A%0ALooking%20forward%20to%20hearing%20from%20you%20soon.%0A%0ABest%20regards%2C";
+  const emailLink = "mailto:storiesbywevow@gmail.com?subject=Stories by we vow";
 
   const [submissionError, setSubmissionError] = useState<string | null>(null);
 
@@ -109,11 +108,11 @@ function Contact() {
                     alt="mail"
                   />
                   <p className="font-judson text-sm md:text-xl text-[#503C16] ml-1 md:ml-2">
-                    shadow@gmail.com
+                    storiesbywevow@gmail.com
                   </p>
                 </a>
                 <a
-                  href="tel:9090909090"
+                  href="tel:+918124229858"
                   className="flex w-fit cursor-pointer items-center mb-10"
                 >
                   <Image
@@ -122,17 +121,20 @@ function Contact() {
                     alt="phone"
                   />
                   <p className="font-judson text-sm md:text-xl text-[#503C16] ml-1 md:ml-2">
-                    9090909090
+                    +91 8124229858
                   </p>
                 </a>
-                <a className="flex w-fit cursor-pointer items-center mb-10">
+                <a
+                  className="flex w-fit cursor-pointer items-center mb-10"
+                  href="https://www.instagram.com/storiesbywevow?igsh=MTVyd2lkc2xjZ253bw=="
+                >
                   <Image
                     src={insta}
                     className="w-[15px] md:w-[30px]"
                     alt="insta"
                   />
                   <p className="font-judson text-sm md:text-xl text-[#503C16] ml-1 md:ml-2">
-                    HAKUNAMATATA
+                    storiesbywevow
                   </p>
                 </a>
               </div>
@@ -141,7 +143,7 @@ function Contact() {
                   <a
                     className="button2 md:scale-125 md:ml-4"
                     target="_blank"
-                    href="https://wa.me/+918838974199?text=Hi,%20I%20saw%20your%20website%20and%20would%20like%20to%20talk%20to%20you%20about%20an%20event"
+                    href="https://wa.me/+918124229858?text=Hi"
                   >
                     WhatsApp
                     <svg
