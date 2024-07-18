@@ -143,7 +143,7 @@ function Contact() {
                   <a
                     className="button2 md:scale-125 md:ml-4"
                     target="_blank"
-                    href="https://wa.me/+918124229858?text=Hi"
+                    href="https://wa.me/8124229858?text=Hi"
                   >
                     WhatsApp
                     <svg
