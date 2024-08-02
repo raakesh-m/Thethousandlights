@@ -3,7 +3,6 @@ import Hero from "./components/Hero";
 import Aboutus from "./components/Aboutus";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
-import Footer from "./components/Footer";
 import Slider from "./components/Slider";
 
 export default function Home() {
