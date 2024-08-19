@@ -36,7 +36,7 @@ export function Navbar() {
   };
 
   return (
-    <div className="fixed py-2 w-full bg-[#FDF7E4] z-30">
+    <div className="fixed py-2 w-full bg-[#F3F3F3] z-30">
       <div className="mx-auto flex max-w-full items-center px-4 py-2 sm:px-6 lg:px-8">
         <div className="lg:inline-flex items-center fixed ml-2 hidden space-x-2">
           <ScrollLink
@@ -58,7 +58,7 @@ export function Navbar() {
                   to={item.href}
                   smooth={true}
                   duration={500}
-                  className="font-judson text-xl px-6 py-4 cursor-pointer text-black hover:border-b-4 border-[#503c16]"
+                  className="font-judson text-xl px-6 py-4 cursor-pointer text-black hover:border-b-4 border-[#393E46]"
                   onClick={closeMenu}
                 >
                   {item.name}

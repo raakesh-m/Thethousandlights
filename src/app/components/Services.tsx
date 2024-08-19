@@ -8,9 +8,6 @@ import { useEffect, useState } from "react";
 import prewed from "../../../public/assets/services/prewed.svg";
 import wed from "../../../public/assets/services/wed.svg";
 import engagement from "../../../public/assets/services/engagement.svg";
-import prewedmob from "../../../public/assets/services/prewedmob.svg";
-import wedmob from "../../../public/assets/services/wedmob.svg";
-import engagementmob from "../../../public/assets/services/engagementmob.svg";
 
 function Services() {
   const [scrollY, setScrollY] = useState(0);
@@ -25,8 +22,11 @@ function Services() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
-    <div id="services" className=" bg-[#DED0B6] h-fit py-12 md:py-20 overflow-hidden">
-      <p className=" font-roboto flex items-center justify-center text-[#7A6D52] xl:text-2xl md:text-xl text-lg">
+    <div
+      id="services"
+      className=" bg-[#DED0B6] h-fit py-12 md:py-20 overflow-hidden"
+    >
+      <p className=" font-roboto flex items-center justify-center text-black xl:text-2xl md:text-xl text-lg">
         Services
       </p>
       <motion.p
@@ -34,7 +34,7 @@ function Services() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
         viewport={{ once: true, amount: 0.8 }}
-        className="font-kalufonia flex items-center justify-center justify-items-center mx-auto text-center text-[#503C16] xl:text-5xl md:text-3xl text-xl md:mt-6 mt-3 "
+        className="font-kalufonia flex items-center justify-center justify-items-center mx-auto text-center text-black xl:text-5xl md:text-3xl text-xl md:mt-6 mt-3 "
       >
         Magic in every frame
       </motion.p>
@@ -43,7 +43,7 @@ function Services() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
         viewport={{ once: true, amount: 0.8 }}
-        className="mx-auto border-b-[1.5px] border-[#503C16] md:max-w-[40%] max-w-[70%] md:my-16 my-6"
+        className="mx-auto border-b-[1.5px] border-black md:max-w-[40%] max-w-[70%] md:my-16 my-6"
       ></motion.div>
       <div className="lg:flex items-center justify-center flex-row gap-6 hidden">
         <motion.div
@@ -59,7 +59,7 @@ function Services() {
             and candid styles, allowing you to choose the approach that best
             suits your event.
           </p>
-          <p className=" font-quattrocento text-2xl text-[#7A6D52] py-3 text-right">
+          <p className=" font-quattrocento text-2xl text-black py-3 text-right">
             Pre-Wedding
           </p>
           <span className="flex items-end justify-end">
@@ -74,7 +74,7 @@ function Services() {
           className=" max-w-[30%]"
         >
           <Image src={wed} alt="Wedding" />
-          <p className=" font-quattrocento text-2xl text-[#7A6D52] py-3 text-center">
+          <p className=" font-quattrocento text-2xl text-black py-3 text-center">
             Wedding
           </p>
         </motion.div>
@@ -91,7 +91,7 @@ function Services() {
             showcasing landscapes, events, or adding unique angles to your
             project.
           </p>
-          <p className=" font-quattrocento text-2xl text-[#7A6D52] py-3 ">
+          <p className=" font-quattrocento text-2xl text-black py-3 ">
             Engagement
           </p>
           <Image src={engagement} alt="Engagement" />
@@ -116,7 +116,7 @@ function Services() {
             viewport={{ once: true, amount: 0.1 }}
             className=" flex w-1/2"
           >
-            <p className=" font-quattrocento text-xl text-[#503C16] py-3 mx-auto flex items-center justify-center text-center">
+            <p className=" font-quattrocento text-xl text-black py-3 mx-auto flex items-center justify-center text-center">
               Engagement
             </p>
           </motion.div>
@@ -136,7 +136,7 @@ function Services() {
             viewport={{ once: true, amount: 0.1 }}
             className=" flex w-1/2"
           >
-            <p className=" font-quattrocento text-xl text-[#503C16] py-3 mx-auto flex items-center justify-center text-center">
+            <p className=" font-quattrocento text-xl text-black py-3 mx-auto flex items-center justify-center text-center">
               Pre-Wedding
             </p>
           </motion.div>
@@ -168,7 +168,7 @@ function Services() {
             viewport={{ once: true, amount: 0.1 }}
             className=" flex w-1/2"
           >
-            <p className=" font-quattrocento text-xl text-[#503C16] py-3 mx-auto flex items-center justify-center text-center">
+            <p className=" font-quattrocento text-xl text-black py-3 mx-auto flex items-center justify-center text-center">
               Wedding
             </p>
           </motion.div>

@@ -41,10 +41,10 @@ function Aboutus() {
           >
             <div className=" relative h-fit w-full ">
               <div className="">
-                <p className=" font-kalufonia text-[#7A6D52] xl:text-2xl text-lg ">
+                <p className=" font-kalufonia text-black xl:text-2xl text-lg ">
                   About us:
                 </p>
-                <p className="font-judson max-w-[60%] text-[#503C16] xl:text-5xl text-3xl mt-6 ">
+                <p className="font-judson max-w-[60%] text-black xl:text-5xl text-3xl mt-6 ">
                   Make Your Wedding a Grand Celebration
                 </p>
                 <div className="border-b-[1.5px] border-black max-w-[38%] my-10" />
@@ -96,10 +96,10 @@ function Aboutus() {
             viewport={{ once: true, amount: 0.5 }}
           >
             <div className="">
-              <p className=" font-roboto  text-[#7A6D52]  text-lg ">
+              <p className=" font-roboto  text-black  text-lg ">
                 About us:
               </p>
-              <p className="font-judson max-w-[80%] text-[#503C16] text-3xl mt-2 ">
+              <p className="font-judson max-w-[80%] text-black text-3xl mt-2 ">
                 Make Your Wedding a Grand Celebration
               </p>
               <div className="border-b-[1.5px] border-black max-w-[38%] my-6" />

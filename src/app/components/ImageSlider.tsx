@@ -24,10 +24,10 @@ const ImageSlider: React.FC<PropType> = ({ options }) => {
     <>
       <section className="embla overflow-hidden pt-14 hidden lg:block relative">
         <div className="absolute bottom-10 xl:bottom-20 left-10 xl:left-20 z-10 p-4">
-          <p className="text-3xl xl:text-4xl font-judson text-shadow-default">
+          <p className="text-3xl xl:text-4xl font-kalufonia text-shadow-default">
             Capture timeless moments with
           </p>
-          <p className="text-4xl xl:text-5xl font-judson  text-shadow-strong">
+          <p className="text-4xl xl:text-5xl font-kalufonia  text-shadow-strong">
             Stories by WE VOW
           </p>
         </div>

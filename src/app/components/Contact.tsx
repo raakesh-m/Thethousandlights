@@ -31,7 +31,6 @@ const initialValues = {
   requirements: "",
 };
 
-const options = ["option1", "option2", "option3"];
 
 function Contact() {
   const emailLink = "mailto:storiesbywevow@gmail.com?subject=Stories by we vow";
@@ -74,7 +73,7 @@ function Contact() {
   };
   return (
     <>
-      <p className="font-kalufonia bg-[#FDF7E4] md:text-center text-3xl px-10 md:text-5xl sm:text-6xl text-[#595345] py-4 sm:py-8">
+      <p className="font-kalufonia bg-[#FDF7E4] md:text-center text-3xl px-10 md:text-5xl sm:text-6xl text-black py-4 sm:py-8">
         Inquiry
       </p>
       <div
@@ -92,7 +91,7 @@ function Contact() {
 
         <div className=" w-full md:w-1/2 items-center px-10 md:px-14">
           <div className="md:ml-14">
-            <p className="text-[#503C16] text-lg md:text-4xl font-quattrocento font-bold mb-10">
+            <p className="text-black text-lg md:text-4xl font-quattrocento font-bold mb-10">
               Get In Touch
             </p>
             <div className="flex-row md:flex-col flex justify-between content-between">
@@ -107,7 +106,7 @@ function Contact() {
                     className="w-[15px] md:w-[30px]"
                     alt="mail"
                   />
-                  <p className="font-judson text-sm md:text-xl text-[#503C16] ml-1 md:ml-2">
+                  <p className="font-judson text-sm md:text-xl text-black ml-1 md:ml-2">
                     storiesbywevow@gmail.com
                   </p>
                 </a>
@@ -120,7 +119,7 @@ function Contact() {
                     className="w-[15px] md:w-[30px]"
                     alt="phone"
                   />
-                  <p className="font-judson text-sm md:text-xl text-[#503C16] ml-1 md:ml-2">
+                  <p className="font-judson text-sm md:text-xl text-black ml-1 md:ml-2">
                     +91 8124229858
                   </p>
                 </a>
@@ -133,7 +132,7 @@ function Contact() {
                     className="w-[15px] md:w-[30px]"
                     alt="insta"
                   />
-                  <p className="font-judson text-sm md:text-xl text-[#503C16] ml-1 md:ml-2">
+                  <p className="font-judson text-sm md:text-xl text-black ml-1 md:ml-2">
                     storiesbywevow
                   </p>
                 </a>
@@ -185,10 +184,10 @@ function Contact() {
           </div>
         </div>
         <div className=" w-full md:w-1/2 items-center px-10 md:px-14 ">
-          <p className="text-[#503C16] text-4xl font-quattrocento hidden md:flex font-bold mb-4">
+          <p className="text-black text-4xl font-quattrocento hidden md:flex font-bold mb-4">
             Contact
           </p>
-          <p className="text-[#503C16] text-lg md:text-3xl font-yrsa md:w-1/2  mb-10">
+          <p className="text-black text-lg md:text-3xl font-yrsa md:w-1/2  mb-10">
             Please enter your details below to get in touch
           </p>
           <Toaster position="bottom-center" />
@@ -205,7 +204,7 @@ function Contact() {
                     name="name"
                     type="text"
                     placeholder="Name"
-                    className="border-b border-[#BBAB8C] text-black py-2 placeholder-[#504531] text-lg sm:text-2xl font-judson bg-transparent focus:outline-none"
+                    className="border-b border-black text-black py-2 placeholder-black text-lg sm:text-2xl font-judson bg-transparent focus:outline-none"
                   />
                   <ErrorMessage
                     name="name"
@@ -219,7 +218,7 @@ function Contact() {
                     name="mobileNumber"
                     type="text"
                     placeholder="Mobile Number"
-                    className="border-b border-[#BBAB8C] text-black py-2 placeholder-[#504531] text-lg sm:text-2xl font-judson bg-transparent focus:outline-none w-full"
+                    className="border-b border-black text-black py-2 placeholder-black text-lg sm:text-2xl font-judson bg-transparent focus:outline-none w-full"
                   />
                   <ErrorMessage
                     name="mobileNumber"
@@ -233,7 +232,7 @@ function Contact() {
                     name="email"
                     type="email"
                     placeholder="Email"
-                    className="border-b border-[#BBAB8C] text-black py-2 placeholder-[#504531] text-lg sm:text-2xl font-judson bg-transparent focus:outline-none w-full"
+                    className="border-b border-black text-black py-2 placeholder-black text-lg sm:text-2xl font-judson bg-transparent focus:outline-none w-full"
                   />
                   <ErrorMessage
                     name="email"
@@ -247,7 +246,7 @@ function Contact() {
                     name="requirements"
                     type="text"
                     placeholder="Requirements"
-                    className="border-b border-[#BBAB8C] text-black py-2 placeholder-[#504531] text-lg sm:text-2xl font-judson bg-transparent focus:outline-none w-full"
+                    className="border-b border-black text-black py-2 placeholder-black text-lg sm:text-2xl font-judson bg-transparent focus:outline-none w-full"
                   />
                   <ErrorMessage
                     name="requirements"
@@ -259,9 +258,9 @@ function Contact() {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="relative inline-flex items-center text-lg sm:text-2xl font-judson justify-start py-2 md:py-3 sm:px-12 px-8 overflow-hidden text-white transition-all duration-150 ease-in-out rounded bg-[#595345] group"
+                    className="relative inline-flex items-center text-lg sm:text-2xl font-judson justify-start py-2 md:py-3 sm:px-12 px-8 overflow-hidden text-white transition-all duration-150 ease-in-out rounded bg-black group"
                   >
-                    <span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-[#DED0B6] group-hover:h-full"></span>
+                    <span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-white group-hover:h-full"></span>
                     <span className="absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12"></span>
                     <span className="absolute left-0 pl-2.5 -translate-x-12 group-hover:translate-x-0 ease-out duration-200"></span>
                     <span className="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-black">
