@@ -24,7 +24,7 @@ function Services() {
   return (
     <div
       id="services"
-      className=" bg-[#DED0B6] h-fit py-12 md:py-20 overflow-hidden"
+      className=" bg-[#EBEBEB] h-fit py-12 md:py-20 overflow-hidden"
     >
       <p className=" font-roboto flex items-center justify-center text-black xl:text-2xl md:text-xl text-lg">
         Services

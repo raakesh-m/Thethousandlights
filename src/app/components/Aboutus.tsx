@@ -31,7 +31,7 @@ function Aboutus() {
   return (
     <>
       <div id="about">
-        <div className=" bg-[#FDF7E4] h-fit py-20 px-[10%] hidden justify-between overflow-hidden w-full relative md:flex  ">
+        <div className=" bg-[#F3F3F3] h-fit py-20 px-[10%] hidden justify-between overflow-hidden w-full relative md:flex  ">
           <motion.div
             initial={{ x: -100 }}
             whileInView={{ x: 0 }}

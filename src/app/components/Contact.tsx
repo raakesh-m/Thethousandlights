@@ -31,7 +31,6 @@ const initialValues = {
   requirements: "",
 };
 
-
 function Contact() {
   const emailLink = "mailto:storiesbywevow@gmail.com?subject=Stories by we vow";
 
@@ -73,12 +72,12 @@ function Contact() {
   };
   return (
     <>
-      <p className="font-kalufonia bg-[#FDF7E4] md:text-center text-3xl px-10 md:text-5xl sm:text-6xl text-black py-4 sm:py-8">
+      <p className="font-kalufonia bg-[#F3F3F3] md:text-center text-3xl px-10 md:text-5xl sm:text-6xl text-black py-4 sm:py-8">
         Inquiry
       </p>
       <div
         id="inquiry"
-        className="bg-[#FDF7E4] flex flex-col-reverse md:flex-row relative md:pb-24"
+        className="bg-[#F3F3F3] flex flex-col-reverse md:flex-row relative md:pb-24"
       >
         <ScrollLink
           to="slider"
@@ -260,7 +259,7 @@ function Contact() {
                     disabled={isSubmitting}
                     className="relative inline-flex items-center text-lg sm:text-2xl font-judson justify-start py-2 md:py-3 sm:px-12 px-8 overflow-hidden text-white transition-all duration-150 ease-in-out rounded bg-black group"
                   >
-                    <span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-white group-hover:h-full"></span>
+                    <span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-[#bebebe] group-hover:h-full"></span>
                     <span className="absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12"></span>
                     <span className="absolute left-0 pl-2.5 -translate-x-12 group-hover:translate-x-0 ease-out duration-200"></span>
                     <span className="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-black">

@@ -39,7 +39,7 @@ function Hero() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
-    <div id="home" className=" bg-[#F3F3F3] h-fit py-12 md:py-20 ">
+    <div id="home" className=" bg-[#EBEBEB] h-fit py-12 md:py-20 ">
       <motion.p
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
