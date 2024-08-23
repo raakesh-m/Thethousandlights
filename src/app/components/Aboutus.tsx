@@ -88,7 +88,7 @@ function Aboutus() {
             </motion.div>
           </div>
         </div>
-        <div className=" bg-[#FDF7E4] h-fit py-20 px-[10%] flex flex-col  overflow-hidden w-full  md:hidden  ">
+        <div className=" bg-[#F3F3F3] h-fit py-20 px-[10%] flex flex-col  overflow-hidden w-full  md:hidden  ">
           <motion.div
             initial={{ x: -120 }}
             whileInView={{ x: 0 }}
@@ -96,9 +96,7 @@ function Aboutus() {
             viewport={{ once: true, amount: 0.5 }}
           >
             <div className="">
-              <p className=" font-roboto  text-black  text-lg ">
-                About us:
-              </p>
+              <p className=" font-roboto  text-black  text-lg ">About us:</p>
               <p className="font-judson max-w-[80%] text-black text-3xl mt-2 ">
                 Make Your Wedding a Grand Celebration
               </p>

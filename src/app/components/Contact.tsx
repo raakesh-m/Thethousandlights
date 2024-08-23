@@ -110,7 +110,7 @@ function Contact() {
                   </p>
                 </a>
                 <a
-                  href="tel:+918124229858"
+                  href="tel:+919894941653"
                   className="flex w-fit cursor-pointer items-center mb-10"
                 >
                   <Image
@@ -119,7 +119,7 @@ function Contact() {
                     alt="phone"
                   />
                   <p className="font-judson text-sm md:text-xl text-black ml-1 md:ml-2">
-                    +91 8124229858
+                    +91 9894941653
                   </p>
                 </a>
                 <a
@@ -141,7 +141,7 @@ function Contact() {
                   <a
                     className="button2 md:scale-125 md:ml-4"
                     target="_blank"
-                    href="https://wa.me/8124229858?text=Hi"
+                    href="https://wa.me/9894941653?text=Hi"
                   >
                     WhatsApp
                     <svg

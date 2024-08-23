@@ -137,7 +137,7 @@ export function Navbar() {
                   type="button"
                   className="mt-4 w-full rounded-md bg-black px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
                   onClick={() =>
-                    window.open("https://wa.me/8124229858?text=Hi", "_blank")
+                    window.open("https://wa.me/9894941653?text=Hi", "_blank")
                   }
                 >
                   Whatsapp
@@ -150,7 +150,7 @@ export function Navbar() {
           <a
             className="button2"
             target="_blank"
-            href="https://wa.me/8124229858?text=Hi"
+            href="https://wa.me/9894941653?text=Hi"
           >
             WhatsApp
             <svg
