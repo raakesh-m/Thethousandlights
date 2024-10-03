@@ -5,9 +5,9 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "The Thousand Lights",
+  title: "Stories by WE VOW",
   description:
-    "Capture unforgettable moments with The Thousand Lights, your premier events photography company. From lively celebrations to intimate gatherings, our lens immortalizes the essence of every occasion. Join us in preserving memories and illuminating the magic of your events through a thousand lights.",
+    "Capture unforgettable moments with Stories by WE VOW, your premier events photography company. From vibrant celebrations to heartfelt gatherings, our lens captures the essence of every occasion. Join us in preserving your memories and telling your unique story through the art of photography, creating timeless treasures you'll cherish forever.",
 };
 
 export default function RootLayout({
