@@ -7,7 +7,7 @@ export async function POST(request: Request) {
     // console.log("check", name, mobileNumber, email, requirements);
 
     await resend.emails.send({
-      from: "onboarding@resend.dev",
+      from: "inquiry@storiesbywevow.in",
       to: "storiesbywevow@gmail.com",
       subject: "New Contact Form Submission",
       html: `
