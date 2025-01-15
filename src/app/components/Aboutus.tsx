@@ -50,7 +50,7 @@ function Aboutus() {
                 <div className="border-b-[1.5px] border-black max-w-[38%] my-10" />
               </div>
               <p className="text-black font-quattrocento text-sm md:text-md lg:text-lg xl:text-2xl max-w-[70%]  ">
-                At Thousand Lights, we believe every life deserves to be a
+                At StoriesByWeVow, we believe every life deserves to be a
                 masterpiece. We are a team of seasoned photographers united by a
                 deep appreciation for the art of capturing light and emotion.
                 Our experience allows us to guide you with a gentle hand,
@@ -130,7 +130,7 @@ function Aboutus() {
             viewport={{ once: true, amount: 0.5 }}
           >
             <p className="text-black font-quattrocento text-[10px] leading-5  max-w-[85%]  ">
-              At Thousand Lights, we believe every life deserves to be a
+              At StoriesByWeVow, we believe every life deserves to be a
               masterpiece. We are a team of seasoned photographers united by a
               deep appreciation for the art of capturing light and emotion. Our
               experience allows us to guide you with a gentle hand, translating

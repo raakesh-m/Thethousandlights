@@ -54,10 +54,10 @@ function Services() {
           className=" max-w-[30%]"
         >
           <p className=" font-quattrocento text-xl text-black leading-10 text-right ">
-            Thousand Lights Photography offers a variety of services to meet
-            your photography and videography needs. We specialize in traditional
-            and candid styles, allowing you to choose the approach that best
-            suits your event.
+            StoriesByWeVow Photography offers a variety of services to meet your
+            photography and videography needs. We specialize in traditional and
+            candid styles, allowing you to choose the approach that best suits
+            your event.
           </p>
           <p className=" font-quattrocento text-2xl text-black py-3 text-right">
             Pre-Wedding
@@ -123,10 +123,10 @@ function Services() {
         </div>
 
         <p className=" text-black font-quattrocento text-sm mt-2 ">
-          Thousand Lights Photography offers a variety of services to meet your
+          StoriesByWeVow Photography offers a variety of services to meet your
           photography and videography needs. We specialize in traditional and
           candid styles, allowing you to choose the approach that best suits
-          your event
+          your event.
         </p>
         <div className="w-full flex my-4 ">
           <motion.div
@@ -175,10 +175,10 @@ function Services() {
         </div>
 
         <p className=" text-black font-quattrocento text-sm mt-2 ">
-          Thousand Lights Photography offers a variety of services to meet your
+          StoriesByWeVow Photography offers a variety of services to meet your
           photography and videography needs. We specialize in traditional and
           candid styles, allowing you to choose the approach that best suits
-          your event
+          your event.
         </p>
       </div>
     </div>

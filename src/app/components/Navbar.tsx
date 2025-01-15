@@ -46,7 +46,7 @@ export function Navbar() {
             className=" cursor-pointer w-30"
             onClick={closeMenu}
           >
-            <Image src={logo} alt="The Thousand Lights" />
+            <Image src={logo} alt="StoriesByWeVow" />
           </ScrollLink>
         </div>
 
@@ -80,7 +80,7 @@ export function Navbar() {
             className=" cursor-pointer flex items-center justify-center mx-auto w-20"
             onClick={closeMenu}
           >
-            <Image src={logo} alt="The Thousand Lights" />
+            <Image src={logo} alt="StoriesByWeVow" />
           </ScrollLink>
         </div>
 
@@ -99,7 +99,7 @@ export function Navbar() {
                     >
                       <Image
                         src={logo}
-                        alt="The Thousand Lights"
+                        alt="StoriesByWeVow"
                         className="w-20"
                       />
                     </ScrollLink>
