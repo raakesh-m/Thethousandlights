@@ -36,7 +36,7 @@ export function Navbar() {
   };
 
   return (
-    <div className="fixed py-2 w-full bg-[#F3F3F3] z-30">
+    <div className="fixed py-0 sm:py-2  w-full bg-[#F3F3F3] z-30">
       <div className="mx-auto flex max-w-full items-center px-4 py-2 sm:px-6 lg:px-8">
         <div className="lg:inline-flex items-center fixed ml-2 hidden space-x-2">
           <ScrollLink

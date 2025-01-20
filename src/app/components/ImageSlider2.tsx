@@ -23,7 +23,7 @@ const ImageSlider2: React.FC<PropType> = ({ options }) => {
   return (
     <>
       <section className="embla overflow-hidden pt-14 block lg:hidden ">
-        <div className="absolute top-[200px] sm:top-[340px] md:top-[480px] p-4 md:left-30 sm:left-20 z-10">
+        <div className="absolute top-[200px] sm:top-[340px] sm385:top-[225px] sm425:top-[245px] sm470:top-[275px]  sm550:left-10  sm550:top-[300px] md:top-[480px] p-4 md:left-30 sm:left-20 z-10">
           <p className="text-xl md:text-xl font-kalufonia text-shadow-default">
             Capture timeless moments with
           </p>

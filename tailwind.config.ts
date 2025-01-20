@@ -25,6 +25,14 @@ const config: Config = {
         strong:
           "2px 2px 4px rgba(0, 0, 0, 0.5), 0px 0px 8px rgba(0, 0, 0, 0.3)",
       },
+      screens: {
+        'sm385': '385px', //custom breakpoints
+        'sm425': '425px', 
+        'sm470': '470px', 
+        'sm550': '550px', 
+
+
+      },
     },
   },
   plugins: [
