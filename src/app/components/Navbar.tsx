@@ -1,6 +1,14 @@
 "use client";
 import React from "react";
-import { Menu, X } from "lucide-react";
+import {
+  Menu,
+  X,
+  Home,
+  Info,
+  Briefcase,
+  MessageCircle,
+  Phone,
+} from "lucide-react";
 import Image from "next/image";
 import logo from "../../../public/assets/wvlogo.svg";
 import { Link as ScrollLink } from "react-scroll";
@@ -9,18 +17,22 @@ const menuItems = [
   {
     name: "Home",
     href: "home",
+    icon: <Home />,
   },
   {
     name: "About us",
     href: "about",
+    icon: <Info />,
   },
   {
     name: "Services",
     href: "services",
+    icon: <Briefcase />,
   },
   {
     name: "Inquiry",
     href: "inquiry",
+    icon: <MessageCircle />,
   },
 ];
 
@@ -33,6 +45,14 @@ export function Navbar() {
 
   const closeMenu = () => {
     setIsMenuOpen(false);
+  };
+
+  const handleContactClick = () => {
+    // Open the WhatsApp link
+    window.open("https://wa.me/9894941653?text=Hi", "_blank");
+
+    // Close the menu
+    closeMenu();
   };
 
   return (
@@ -85,7 +105,7 @@ export function Navbar() {
         </div>
 
         {isMenuOpen && (
-          <div className="absolute inset-x-0 top-0 z-50 origin-top-right w-2/3  transform  transition lg:hidden">
+          <div className="absolute inset-x-0 top-0 z-50 origin-top-right w-3/4  transform  transition lg:hidden">
             <div className="divide-y-2 divide-gray-50  bg-[#B79666] shadow-lg h-screen ring-1 ring-black ring-opacity-5">
               <div className="px-5 pb-6 pt-5">
                 <div className="flex items-center justify-between">
@@ -97,11 +117,7 @@ export function Navbar() {
                       className=" cursor-pointer"
                       onClick={closeMenu}
                     >
-                      <Image
-                        src={logo}
-                        alt="StoriesByWeVow"
-                        className="w-20"
-                      />
+                      <Image src={logo} alt="StoriesByWeVow" className="w-20" />
                     </ScrollLink>
                   </div>
                   <div className="-mr-2">
@@ -123,25 +139,24 @@ export function Navbar() {
                         to={item.href}
                         smooth={true}
                         duration={500}
-                        className="-m-3 flex items-center cursor-pointer rounded-md p-3 text-sm font-semibold hover:bg-gray-50"
+                        className="-m-3 flex items-center cursor-pointer rounded-xl px-5 py-3 mt-1 mx-1 text-md font-semibold hover:bg-gray-50 text-white hover:text-[#503C16] group"
                         onClick={closeMenu}
                       >
-                        <span className="ml-3 text-base font-medium text-gray-900">
+                        {item.icon}
+                        <span className="ml-3 text-base font-medium">
                           {item.name}
                         </span>
                       </ScrollLink>
                     ))}
                   </nav>
+                  <button
+                    className="-m-3 flex items-center w-[96.5%] cursor-pointer rounded-xl px-5 py-3 mr-2 mt-5 mx-1 text-md font-semibold hover:bg-gray-50 text-white hover:text-[#503C16] group"
+                    onClick={handleContactClick}
+                  >
+                    <Phone />
+                    <span className="ml-3 text-base font-medium">Contact</span>
+                  </button>
                 </div>
-                <button
-                  type="button"
-                  className="mt-4 w-full rounded-md bg-black px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
-                  onClick={() =>
-                    window.open("https://wa.me/9894941653?text=Hi", "_blank")
-                  }
-                >
-                  Whatsapp
-                </button>
               </div>
             </div>
           </div>
